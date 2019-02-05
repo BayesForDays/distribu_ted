@@ -2,7 +2,7 @@
 
 ### What is word2vec?
 
-word2vec is a general family of models that are generally thought to "predict" words. The general task is not to find the main topics that characterize a set of documents, which is the objective of LSA. Instead, there are two general ways of training the model, known typically as skip-gram and continuous bag-of-words (CBOW). word2vec is well-established to provide better fits to behavioral data (Mandera, Keuleers, & Brysbaert, 2016) and many more natural language processing tasks than LSA.
+word2vec is a general family of models that are generally thought to "predict" words. The general task is not to find the main topics that characterize a set of documents, which is the objective of LSA. Instead, there are two general ways of training the model, known typically as skip-gram and continuous bag-of-words (CBOW). word2vec is well-established to provide better fits to behavioral data (Mandera, Keuleers, & Brysbaert, 2017) and many more natural language processing tasks than LSA.
 
 #### What is continuous bag-of-words?
 
@@ -18,13 +18,13 @@ Each word is allocated its own "slot" in the predictions. So, if the model is to
 
 word2vec is thankfully fairly easy to implement in Python. We only really need `pandas`, which we will use to load the data set into Python, and `nltk`, which we will use to break sentences into their component words (tokenization). We will use the `gensim` package to create word vectors. If you have [installed this repository already](https://github.com/BayesForDays/distribu_ted), you should already have these packages. It is possible that `nltk` does not yet have a critical component that you will need for tokenization. You may need to add this line to your code:
 
-```
+```python
 nltk.download('punkt')
 ```
 
 The basic steps are as follows (choose your own file and dimensionality):
 
-```
+```python
 from gensim.models.word2vec import Word2Vec
 from nltk.tokenize import word_tokenize
 import pandas as pd
@@ -41,13 +41,13 @@ Unlike LSA, once you have trained the word2vec model, you can very easily calcul
 
 Getting the vectors out is slightly trickier but still fairly straightforward:
 
-```
+```python
 vecs = w2v.wv.get_vector(word)
 ```
 
 It is also much easier to save this model and reload it for other applications:
 
-```
+```python
 w2v.wv.save('./path/to/file.model')
 ```
 
