@@ -20,13 +20,13 @@ The end result of SVD on a count matrix is a smaller *k x d* matrix and another 
 
 LSA is thankfully fairly easy to implement in Python. The basic units you will need are `scikit-learn`, which we will use for making the count matrices and running SVD, `pandas`, which we will use to load the data set into Python, and `nltk`, which we will use to break sentences into their component words (tokenization). If you have [installed this repository already](https://github.com/BayesForDays/distribu_ted), you should already have these packages. It is possible that `nltk` does not yet have a critical component that you will need for tokenization. You may need to add this line to your code:
 
-```
+```python
 nltk.download('punkt')
 ```
 
 The basic steps are as follows (choose your own file and dimensionality):
 
-```
+```python
 from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.decomposition import Truncated SVD  # good with sparse matrices
@@ -41,7 +41,7 @@ doc_vecs = svd.fit_transform(count_matrix)
 
 However, once we are there we actually need to do a bit more work to get the word vectors from the SVD model. For that you will need to dig into the model directly. You might also want to normalize because the vectors have funny lengths and you don't want every word to be most related to the word "the."
 
-```
+```python
 word_vecs = svd.components_.T  # n x 100 matrix
 normalized_word_vecs = word_vecs / np.c_[np.sqrt((word_vecs ** 2))]
 ```
@@ -50,7 +50,7 @@ But once you have these vectors you can very easily calculate how similar a word
 
 So, if you want to find out where `pizza` is and then compare it to all the other words, you can write:
 
-```
+```python
 pizza_vec = normalized_word_vecs[cv.vocabulary_['pizza']]
 pizza_vec.T.dot(normalized_word_vecs)
 ```
