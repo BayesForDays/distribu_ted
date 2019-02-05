@@ -1,4 +1,4 @@
-# distribu_ted
+# distribu_TED
 ### Or, a silly pun and word embeddings tutorial
 
 ## What are word embeddings?
@@ -6,13 +6,13 @@ Word embeddings are a way to represent the "meanings" of words learned by differ
 
 ## Why might I want them?
 
-Word embeddings have proven useful for modeling cognitive language processing tasks (Landauer & Dumais, 1997; Lund & Burgess, 1996), especially for the match between a word and its semantic context or for creating semantically appropriate stimuli in behavioral experiments. These methods have been used to approximate lexical knowledge and word meaning because resources such as WordNet (Miller, 1995) have inherent limitations, are somewhat noisy, and are necessarily incomplete. Other resources such as feature norms (McRae, Cree, Seidenberg, & McNorgan, 2005) are necessarily incomplete. Plus, words or concepts might not have features, depending on your theory. Other sources of information are generally sparse. 
+Word embeddings have proven useful for modeling cognitive language processing tasks (Landauer & Dumais, 1997; Lund & Burgess, 1996), especially for the match between a word and its semantic context or for creating semantically appropriate stimuli in behavioral experiments. These methods have been used to approximate lexical knowledge and word meaning because resources such as WordNet (Miller, 1995) are noisy and lack some distinctions (e.g. are two words related etymologically or not). Other resources such as feature norms (McRae, Cree, Seidenberg, & McNorgan, 2005) are necessarily incomplete. Plus, words or concepts might not have features, depending on your theory. Other sources of information are generally sparse. 
 
 For predicting both human behavior and for use in natural language processing tasks, embeddings-based methods tend to lead to improvements. Even basic methods like `word2vec` can lead to huge improvements on classification. Likewise, LSA has been used in cognitive science and psycholinguistic research since it was introduced nearly 20 years ago. But, these are all models that require training, so it is important to understand what mathematical assumptions and transformations go into it. Always keep in your back pocket some skepticism about whether these models are cognitively plausible or not.
 
 ## How can I get them?
 
-Follow this tutorial! Each model featured here is discussed in its own folder and has an associated Jupyter notebook to go along with it. All you need is a corpus and some basic tools to get started. Follow the code below to get started.
+Follow this tutorial! Each model featured here is discussed in its own folder and has an associated Jupyter notebook to go along with it. All you need is a corpus and some basic tools to get started. Just try the code below.
 
 ## How do I use this repository?
 
