@@ -2,7 +2,7 @@
 ### Or, a silly pun and word embeddings tutorial
 
 ## What are word embeddings?
-Word embeddings are a way to represent the "meanings" of words learned by different distributional semantics methods. Words are defined not by their conceptual features but instead by how they are talked about in large corpora. Historically these have included things like Latent Semantic Analysis (LSA), Hyperspace Analogue to Language (HAL), topic models (e.g. Latent Dirichlet Allocation, or LDA), and more recent models such as GloVe, word2vec (skip-gram or continuous bag-of-words/CBOW), ELMo, and BeRT. These models are usually estimated on massive text corpora, such as recent snapshots of Wikipedia.
+Word embeddings are a way to represent the "meanings" of words learned by different distributional semantics methods. Words are defined not by their conceptual features but instead by how they are talked about in large corpora. Historically these have included things like Latent Semantic Analysis (LSA), Hyperspace Analogue to Language (HAL), topic models (e.g. Latent Dirichlet Allocation, or LDA), and more recent models such as GloVe, pointwise mutual information (PMI), word2vec (skip-gram or continuous bag-of-words/CBOW), ELMo, and BeRT. These models are usually estimated on massive text corpora, such as recent snapshots of Wikipedia.
 
 ## Why might I want them?
 
@@ -43,6 +43,7 @@ Follow this tutorial! Each model featured here is discussed in its own folder an
 * **LDA**: Blei, D. M., Ng, A. Y., & Jordan, M. I. (2003). Latent dirichlet allocation. _Journal of Machine Learning Research, 3_, 993-1022.
 * **word2vec (skip-gram and CBOW)**: Mikolov, T., Sutskever, I., Chen, K., Corrado, G. S., & Dean, J. (2013). Distributed representations of words and phrases and their compositionality. In _Advances in Neural Information Processing Systems_ (pp. 3111-3119).
 * **GloVe**: Pennington, J., Socher, R., & Manning, C. (2014). Glove: Global vectors for word representation. In _Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)_ (pp. 1532-1543).
+* **PMI**: Church, K. W., & Hanks, P. (1990). Word association norms, mutual information, and lexicography. _Computational linguistics, 16_, 22-29.
 * **ELMo**: Peters, M., Neumann, M., Iyyer, M., Gardner, M., Clark, C., Lee, K., & Zettlemoyer, L. (2018). Deep Contextualized Word Representations. In _Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies_ (Vol. 1, pp. 2227-2237).
 * **BERT**: Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). BERT: Pre-training of deep bidirectional transformers for language understanding. _arXiv preprint_. arXiv:1810.04805.
 

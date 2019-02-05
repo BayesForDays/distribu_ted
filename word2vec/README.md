@@ -16,7 +16,7 @@ Each word is allocated its own "slot" in the predictions. So, if the model is to
 
 ## Implementing word2vec in Python
 
-LSA is thankfully fairly easy to implement in Python. We only really need `pandas`, which we will use to load the data set into Python, and `nltk`, which we will use to break sentences into their component words (tokenization). We will use the `gensim` package to create word vectors. If you have [installed this repository already](https://github.com/BayesForDays/distribu_ted), you should already have these packages. It is possible that `nltk` does not yet have a critical component that you will need for tokenization. You may need to add this line to your code:
+word2vec is thankfully fairly easy to implement in Python. We only really need `pandas`, which we will use to load the data set into Python, and `nltk`, which we will use to break sentences into their component words (tokenization). We will use the `gensim` package to create word vectors. If you have [installed this repository already](https://github.com/BayesForDays/distribu_ted), you should already have these packages. It is possible that `nltk` does not yet have a critical component that you will need for tokenization. You may need to add this line to your code:
 
 ```
 nltk.download('punkt')
