@@ -2,7 +2,7 @@
 ### Or, a silly pun and word embeddings tutorial
 
 ## What are word embeddings?
-Word embeddings are a way to represent the "meanings" of words learned by different distributional semantics methods. Words are defined not by their conceptual features but instead by how they are talked about in large corpora. Historically these have included things like Latent Semantic Analysis (LSA), Hyperspace Analogue to Language (HAL), topic models (e.g. Latent Dirichlet Allocation, or LDA), and more recent models such as GloVe, pointwise mutual information (PMI), word2vec (skip-gram or continuous bag-of-words/CBOW), ELMo, and BeRT. These models are usually estimated on massive text corpora, such as recent snapshots of Wikipedia.
+Word embeddings are a way to represent the "meanings" of words learned by different distributional semantics methods. Words are defined not by their conceptual features but instead by how they are talked about in large corpora. Historically these have included things like Latent Semantic Analysis (LSA), Hyperspace Analogue to Language (HAL), topic models (e.g. Latent Dirichlet Allocation, or LDA), and more recent models such as GloVe, pointwise mutual information (PMI) matrix factorization, word2vec (skip-gram or continuous bag-of-words/CBOW), ELMo, and BeRT. These models are usually estimated on massive text corpora, such as recent snapshots of Wikipedia.
 
 ## Why might I want them?
 
